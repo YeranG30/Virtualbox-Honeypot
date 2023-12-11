@@ -40,7 +40,23 @@ From the hacker's perspective, they might attempt to SSH into the machine under 
 
 
 # 4. Honeypot Interaction Logging
-Enhanced Log Description for SSH Access: Detailed Access Logs Capturing Hacker's SSH Entry into the Honeypot - This log meticulously records every instance of unauthorized SSH access, documenting the precise moment a hacker attempts to infiltrate the honeypot.
+When a hacker logs into a honeypot, the system can capture a wide range of data depending on its configuration and capabilities. Here are some key pieces of information and activities that a honeypot typically records:
+
+1. Source IP Address: The IP address of the attacker's machine, which is crucial for identifying the source of the attack.
+   <img width="240" alt="image" src="https://github.com/YeranG30/Virtualbox-Honeypot/assets/74067706/d1e813f2-afc0-4f65-8975-a267f559295d">
+
+
+2. Timestamps: Exact times of each action, helping in creating a timeline of the attack.
+   <img width="172" alt="image" src="https://github.com/YeranG30/Virtualbox-Honeypot/assets/74067706/3b3df98a-1222-4598-b425-005ab71c52d6">
+
+3. Login Credentials Used: Any usernames and passwords attempted by the hacker.
+   <img width="819" alt="image" src="https://github.com/YeranG30/Virtualbox-Honeypot/assets/74067706/0f3926a4-aa07-4d61-b535-32e1fe276660">
+
+
+7. Commands Executed: Detailed logs of commands entered by the attacker, which can reveal their intentions and techniques.
+  <img width="910" alt="image" src="https://github.com/YeranG30/Virtualbox-Honeypot/assets/74067706/c2d08f48-cf6b-4c63-9616-2f921e5defb8">
+
+Network Activity: Data on any outbound or inbound connections initiated by the attacker, including attempts to contact other servers or download additional tools.
 
 ![image](https://github.com/YeranG30/VIrtualbox-Honeypot/assets/74067706/612e8f34-a181-41cb-af3c-11103098478a)
 
